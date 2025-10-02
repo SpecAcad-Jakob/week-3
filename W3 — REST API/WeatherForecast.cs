@@ -1,4 +1,4 @@
-namespace W3___REST_API
+namespace W3_REST_API
 {
     public class WeatherForecast
     {

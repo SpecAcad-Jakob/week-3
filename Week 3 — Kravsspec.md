@@ -22,8 +22,9 @@
   * Response formats, possibly with examples.
   * Description of design and reasoning behind design decisions.
 
-* Database to store data. Parse data from CSV file.
+* Database to store data. ✔? *— Database filled from CSV-file, but wrong; is all text fields, and should be empty before program is run?*
 
+  * Parse data from CSV file.
   * Make sure the parser can handle extra data? What does that even mean; more fields?
   * Make sure the database supports CRUD-operations.
   * Have relevant constraints, such as UNIQUE fields and not-null values.
@@ -42,3 +43,18 @@
 * GUI? To show a lot of data, probably use tables.
 * Website?
 * Text input or buttons to sort and filter? Assignment says the user may type *e.g.* "value>=100".
+
+
+
+#### Where to pick up:
+
+* Roughly structure code into different classes.
+
+  * FileReader class, to read and parse CSV file. Return List of Maps (Dictionary) as table?
+  * DatabaseConnection class, with connection as field, and CRUD, perhaps with a "TO-DO" check for user permissions for some or all operations.
+  * List order of operations; "this, then that, then that".
+
+* Fix database. Empty it and refactor, or delete and remake? 
+
+
+
