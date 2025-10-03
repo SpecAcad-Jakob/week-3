@@ -51,7 +51,7 @@ namespace W3_REST_API
             */
 
 
-            //  Database connection test: 
+            //  Database connection test: does NOT work?
             DatabaseConnector dataBaseConnector = new DatabaseConnector();
 
             DatabaseConnector.Server = "localhost";
