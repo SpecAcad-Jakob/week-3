@@ -37,8 +37,8 @@ namespace W3_REST_API
 
         private static void driver() {
             /*
-            //  FileReader test: 
-            Console.WriteLine("DEBUG: filereader, read cereal.csv");
+            //  FileReader test: works
+            Console.WriteLine("DEBUG: filereader, readAll cereal.csv");
             FileReader fileReader = new FileReader();
             Console.WriteLine("DEBUG: filereader, files counted: " + fileReader.discoveredFilesCount());
             fileReader.readTableFromFile(0);
@@ -51,14 +51,18 @@ namespace W3_REST_API
             */
 
 
-            //  Database connection test:
-            DataBaseConnector.Server = "localhost";
-            DataBaseConnector.DatabaseName = "cereal";
-            DataBaseConnector.TableName = "cereal";
-            DataBaseConnector.Username = "root";
-            DataBaseConnector.Password = "12345";
-            DataBaseConnector.connect();
-            DataBaseConnector.read();
+            //  Database connection test: 
+            DatabaseConnector dataBaseConnector = new DatabaseConnector();
+
+            DatabaseConnector.Server = "localhost";
+            DatabaseConnector.DatabaseName = "cereal";
+            DatabaseConnector.Username = "root";
+            DatabaseConnector.Password = "root";
+
+            dataBaseConnector.TableName = "cereal";
+
+            DatabaseConnector.connect();
+            dataBaseConnector.readAll();
         }
 
     }

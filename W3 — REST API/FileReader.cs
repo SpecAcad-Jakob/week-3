@@ -54,6 +54,10 @@ namespace W3_REST_API {
             streamReader.Close();
         }
 
+        /// <summary>
+        /// Get table of items read from CSV file.
+        /// </summary>
+        /// <returns>Collection of string arrays. Should be parsed before pushing to database.</returns>
         public List<String[]> getTable() { 
             return table;
         }
