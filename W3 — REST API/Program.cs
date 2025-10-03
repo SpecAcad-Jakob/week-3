@@ -57,7 +57,7 @@ namespace W3_REST_API
             DatabaseConnector.Server = "localhost";
             DatabaseConnector.DatabaseName = "cereal";
             DatabaseConnector.Username = "root";
-            DatabaseConnector.Password = "root";
+            DatabaseConnector.Password = "12345";
 
             dataBaseConnector.TableName = "cereal";
 

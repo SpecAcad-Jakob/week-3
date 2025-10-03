@@ -5,7 +5,9 @@
 
 ### Function  
 #### Intended function
+REST-API which can read CSV files and populate a database with them, and have a web interface through which one can perform database queries.  
 #### Current function
+- Can read CSV files into program as table.
 
 
 
